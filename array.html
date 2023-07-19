@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> 
+            array
+        </title>
+        <style>
+            body{
+                background-color : #88F7E2;
+            }
+
+            h1{
+                color:#f7889d;
+                text-decoration: underline;
+            }
+
+            p{
+                color:#10442c;
+            }
+            </style>
+
+            <script>
+            let marks_class_12 = [91 , 82 , 65, 84 , false , "not present" ]
+            console.log(marks_class_12)
+            console.log(marks_class_12[0])
+            console.log(marks_class_12[1])
+            console.log(marks_class_12[2])
+            console.log(marks_class_12[3])
+            console.log(marks_class_12[4])
+            console.log("the length of marks_class_12 is" , marks_class_12.length)
+           console.log(typeof marks_class_12)
+
+
+           //toString
+           let num = [ 1 , 2, 3 , 56 , 7]
+           let b = num.toString()// b is now  a string
+           console.log(b)
+           //join()
+           let c = num.join("_")
+           console.log(c)
+           // pop()
+           let d = num.pop() //pop returns the popped element
+           console.log(num)
+           //push()
+           let e = num.push(56) //push returns the new array length
+           console.log(num , e)
+           // shift ()
+           let f = num.shift() // remove an element from the start of the array
+           console.log(f , num)
+           //unshift()
+           let g = num.unshift(78 , 120)
+           console.log(g , num)
+           //delete 
+            let h = delete num[0]
+           console.log(num.length)
+           // concat 
+
+                     // creating new arrays
+                     let A1 = [1 , 2 , 3]
+                     let A2 = [ 11 , 22 , 33]
+                     let A3 = [111 , 222 , 333]
+                      let new_Array = A1.concat(A2 , A3)
+                      console.log (new_Array)
+            // sort ()   
+            let i = [ 79 ,6 , 41 , 236 ]  
+            i.sort()
+            console.log (i) 
+            
+            // if we want to sort in decending order
+            let compare = (p , q) => {
+                return q-p
+            }
+            let j = [ 23 , 42 , 71 ,10 , 44445 , 888889]
+            j.sort(compare)
+            console.log(j)
+
+            // splice ()
+            let k = [74 , 85, 96 , 41 , 52 , 63 ]
+            k.splice ( 2 , 4 , 100 , 147 , 258 , 369 , 741 , 852)
+            console.log (k)
+
+
+            // looping for array
+             let number = [ 2 , 4, 6, 8, 10]
+             number.forEach((element)=>{
+                console.log(element*element)
+             } )
+
+
+             //array.from
+             let FatherName = "Yogesh"
+             let arr = Array.from(FatherName);
+             console.log(arr)
+
+             // for... of
+             let L = [123 , 456 , 789 , 321 , 654 , 987 ]
+             for (let i of L){
+                console.log(L)
+             }
+
+             //for.....in
+             const students = {
+                name: 'Anisha',
+                class : 7 ,
+                age : 12 ,
+                Roll  : 3,
+             }   
+                     //using for..in
+                     for(let key in students){
+                        //display the properties
+                        console.log(`${key} => ${students[key]}`);
+                     }
+
+             //multi-dimensional array
+             let ARR = [
+                ["John",30],
+                ["Thomas", 28],
+                ["Robert",22],
+             ]        
+
+                //using for loop
+                for (let i =0; i<ARR.length; i++){
+                    console.log(ARR);
+                }
+
+                //print a single multi-dimensional array
+                var ARR1 = ["nishu" , 19 , 100000];
+                var ARR2 = ["roop" , 20 , 50000];
+                var ARR3 = ["manvii" , 18 , 70000];
+                var ARR4 = ["Amar", 21 , 120000];
+                var ARR5 = ["rohit" , 19 , 200000];
+                var SALARY = [ ARR1 , ARR2 , ARR3 ,ARR4 ,ARR5];
+                for(var l=0; l<SALARY.length; l++){
+                    console.log(SALARY[l]);
+                }
+
+                //print  single multidimensional array 
+           // where we just print the salary of a specific person
+           var SALARY1 = [
+                 ARR11 = ["nishu Bhola" , 19 , 100000],
+                 ARR12 = ["roop paramet" , 20 , 50000],
+                 ARR13 = ["manvii bhullar" , 18 , 70000],
+                 ARR14 = ["Amar arora", 21 , 120000],
+                 ARR15 = ["rohit sharma" , 19 , 200000],
+           ];
+           console.log("salary of roop : " +SALARY1[1][2]);
+           console.log("salary of Amar : " + SALARY1[3][2] );
+
+           // use rest operator in new array
+           var Colors = ["violet", "indigo" ,"blue" , "green" , "yellow" , "orange" , "red"];
+                    //destructing assignment
+                    var [ X ,Y , ...ARGS]=Colors;
+                    console.log(X);
+                    console.log(Y);
+                    console.log(ARGS);
+
+             //swapping variable 
+             var XY= 10000,
+              YZ = 20000;
+             [XY ,YZ]=[YZ ,XY];
+             console.log(XY);
+             console.log(YZ);      
+           </script>
+           
+    </head>
+    <body>
+       
+        <h1>  array are the variable that can hold more than one value</h1>
+        <h1> Array methods</h1> 
+        <ul>
+            <li> toString</li> <p> convert a array to a string </p>
+
+            <li> join() </li> <p> join all the array elements using a seprator</p>
+
+            <li> pop()</li> <p> remove last element from the array</p>
+
+            <li> push ()</li> <p> adds new elements at the end of the array</p>
+
+            <li> shift () </li> <p> removes first element and returns it</p>
+
+            <li> unshift() </li> <p> adds element in the beigning and returns new array length</p>
+
+            <li> delete () </li> <p> delete the element of array </p>
+
+            <li> concat </li> <p> use to join one array to another</p>
+
+            <li> Sort () </li> <p> sort the array alphabetically </p>
+
+            <li> splice () </li> <p> use to add new items to array </p>
+            
+        </ul>
+
+        <h1> Looping through array </h1>
+        <p> array can be looped through using classical JS for loop</p>
+        <ol>
+            <li> forEachloop</li> <p> calls a fucntion once for each array element</p>
+            <li>Array.from</li> <p> use to create array from any other object</p> <pre> 
+             <p>The Array.from() method is not supported in Internet Explorer.</p></pre>
+             <li> for... of </li> <p> use to get the value from an array</p>
+        </ol>
+        <h3>
+            Multi-dimensional array
+        </h3> 
+        <p> print a single multi-dimensional array</p>
+        <p> print  single multidimensional array 
+            where we just print the salary of a specific person
+        </p>
+        <p> use rest operator in new Array</p>
+        <P> SWAPPING VARIABLE </P>
+    </body>
+    </html>

@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+
+*{
+    padding: 0%;
+    margin : 0%;
+    box-sizing:border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header{
+    width: 65%;
+    height : 85vh;
+    border : 5px solid black;
+    margin:auto;
+    transition: 0.3s linear;
+}
+
+header nav{
+    width :100%;
+    height : 10%;
+    margin : 5px auto ;
+    border : 1px solid black;
+    display:flex;
+    align-items : center;
+    justify-content: space-between;
+}
+
+header nav.right-box {
+      display : flex;
+      align-items: center;
+}
+
+header nav .right-box ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav .right-box ul li{
+    padding : 3px 15px;
+}
+
+header nav .right-box ul li:nth-last-child(1){
+    border: 5px solid gray;
+    border-radius: 20px;
+    padding : 3px 20px;
+}
+
+header nav .right-box ul li:nth-last-child(1) a {
+   color :black;
+}
+
+header nav .right-box ul li:nth-last-child(1) a:hover {
+    color :red;
+ }
+
+header nav .right-box ul li a{
+    text-decoration: none;
+    color:gray;
+    font-size: 11px;
+    font-weight: 500;
+    transition : 0.3s linear;
+}
+
+header nav .right-box ul li a:hover {
+    color : greenyellow;
+}
+
+header nav .right-box .account-box {
+     display : flex ;
+     align-items : center;
+     margin-left: 20px ;
+}
+
+header nav .right-box .account-box .bi{
+    margin-left :15px;
+    color: purple;
+    cursor: pointer;
+    transition : 0.3s linear;
+}
+
+
+header nav .right-box .account-box .bi:hover{
+    color:blue;
+}
+
+header .content {
+    position : relative;
+    width : 100%;
+    height : 93%;
+     border : 5px solid blueviolet;
+     z-index: 5 ;
+}
+
+header .content::before{
+    content :'';
+    position :absolute;
+    width :100%;
+    height :80%;
+    background-image: url(https://financialtribune.com/sites/default/files/field/image/17january/04-mh-construction_permits_q1_00_196-ab_balaye_lead.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position-y:0px ;
+   border-radius: 20px;
+   z-index:-1;
+}
+/*
+header .content .content-box{
+    width : 500px;
+    height : auto;
+    color: navy;
+    padding :500px;
+    border: 4px solid
+}*/
+
+header .content .content-box h1{
+    font-size : 55px;
+    line-height : 60px;
+    font-weight :600;
+}
+
+header .content .content-box p{
+    font-size:26px;
+    font-weight : 400;
+    color : black;
+    margin-top: 10px ;
+}
+
+header .content .content-box .weather{
+    margin-top: 80px;
+    font-size:20px;
+}
+
+header .content .content-box .weather h6{
+    color: :goldenroz;
+    font-size : 20px;
+    font-weight : 600;
+}
+
+header .content .content-box .weather h6 span{
+    margin-left: 5px;
+}
+

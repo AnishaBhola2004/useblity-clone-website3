@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            math.randum()
+        </title>
+        <style>
+            body{
+                background-color: #808080;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            // generate a random number
+            const a = Math.random() * (10-1) + 1
+            console.log(`Random value between 1 and 10 is ${a}`);
+
+            // generate a random integer
+            const b = Math.floor(Math.random() * (60 - 6)) + 6;
+            console.log(`random value between 6 and 60 is ${a}`);
+
+            // integer value between two numbers
+            const min = parseInt(prompt("enter a min value : "));
+            const max = parseInt(prompt("enter a max value : "));
+
+            const c  = Math.floor(Math.random()* (max - min + 1)) + min;
+            console.log(`Random number between ${min} and ${max} is ${c}`); 
+
+            // generate a random number and store it in an variable and find whether it is equal to , greater than or smalleer to 100
+            var randomNumber = Math.floor(Math.random()*(200-20))+20;
+            // using if condition
+            if(randomNumber ===100){
+                console.log("the random number is equal to 100 . ");
+            }
+            else if( randomNumber > 100){
+                console.log("the random number is greater than 100");
+            }
+            else{
+                console.log("the random number is less than 100");
+            }
+
+            //js console object
+
+                     // console.error
+                     const element = document.getElementById("id1");
+
+                     if(element == null){
+                        console.error("there is an erroe , element does not exist")
+                     }
+
+                     //console.assert
+                     console.assert(document.getElementById("myElement"),
+                     var myElement= (54>85)
+                     );
+        </script>
+    </body>
+    </html>

@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            function practice
+        </title>
+        <style>
+            body{
+                background-color: #004E2C;
+                color:white;
+            }
+
+            
+        </style>
+
+        <script>
+            function name(a){
+                console.log("hello" + a);
+            }
+            name(" learners ");
+
+            function add(a,b){
+                console.log(a+b);
+            }
+
+            let x=10;
+            let y=90;
+            add(x,y);
+
+            // using return value 
+            function subtract(p , q , r){
+                return p - q - r;
+            }
+            let p = 180;
+            let q = 90;
+            let r = 70;
+
+            console.log(subtract(p,q,r));
+
+            //local and global variable
+            let ab = 888; // global
+            function VARIABLE (){
+                let ba = 333; //local
+                console.log(ba);
+            }
+            VARIABLE();
+
+            //anonymous function
+            var greet = function(platform)
+            {
+                console.log("welcome to ", platform)
+            };
+            greet("greeeksforgreeks!!");
+
+            // arrow function
+            let myFunction = (A ,B)=>console.log(A*B);
+            myFunction(8,10);
+        </script>
+    </head>
+    <body>
+        <h1> funtions in js </h1>
+        <p> a js function is a block of code designed to perform a particular task</p>
+    </body>
+    </html>
+    

@@ -1,0 +1,301 @@
+ /* reset container */
+ * {
+    margin :0;
+    padding : 0;
+    box-sizing: border-box;
+ }
+
+ :root {
+    --primary-text-color:#183b56;
+    --secondary-text-color: #577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+    --padding-inline-section:20px;
+ }
+
+ body{
+    font-family:Lora;
+    color: var(--primary-text-color);
+    height : 10000px;
+ }
+
+ h1{
+    font-size: 3rem;
+ }
+
+ h2{
+    font-size:2rem;
+ }
+
+ h3{
+    font-size: 1.5rem;
+ }
+
+ p{
+    font-family: Lumanosimo;
+    font-size:1.25em;
+    color: var(--secondary-text-color);
+    line-height:1.8rem;
+ }
+
+ a{
+    text-decoration: none;
+    display:inline-block;
+ }
+
+ ul{
+    list-style: none;
+ }
+
+ /* utility clkasses */
+
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    padding : 15px 30px;
+    text-align: center;
+}
+
+.container {
+    max-width : 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+.flex{
+    display:flex;
+    align-items: center;
+}
+
+
+.hover-links{
+    color: var(--primary-text-color);
+    transition : 0.2s;
+}
+
+.hover-links:hover{
+    color : var(--accent-color);
+}
+
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+    width : 100px;
+    height :40px;
+    text-align: center;
+    padding-top: 5.5px;
+}
+
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-button{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+    width : 100px;
+    height :40px;
+    text-align: center;
+    padding-top: 5.5px;
+}
+
+.secondary-button:hover{
+    border-color: var(--accent-color);
+}
+/* top banner */
+
+.top-banner{
+    background-color: #4fb3d4;
+    background-image:url(" https://wallpapercave.com/wp/wp2288163.jpg");
+}
+ 
+/* navbar */
+
+.main-nav{
+    justify-content: space-between;
+    margin-top: 20px;
+     
+}
+
+.company-logo img{
+    width: 200px;
+
+    
+}
+
+.nav-links{
+    flex-basis: 730px;
+}
+
+.nav-links ul{
+    justify-content: end;
+    justify-content: space-between;
+}
+
+/*header section*/
+header{
+    padding : 50px var(--padding-inline-section);
+}
+
+.header-section{
+          justify-content: center;
+          gap : 50px;
+}
+
+.header-left{
+    max-width: 40vw;
+}
+
+.header-left h1{
+    margin-top: 20px;
+}
+
+.header-section img{
+    width: 600px;
+}
+
+.btn{
+    margin-top: 25px;
+}
+
+.header-left p{
+    margin-top:5px;
+}
+
+/* companies section */
+
+.companies-section{
+    text-align: center;
+    margin-block:30px;
+    color: var(--primary-text-color);
+}
+
+.heading{
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.logos{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    padding-top: 25px;
+    height: 76px;
+}
+
+/* features section*/
+
+
+.features-section{
+    padding: 80px var(--padding-inline-section) 0;
+    background-image: url("https://cdn.wallpapersafari.com/26/90/vOTg5M.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.features-header{
+          text-align: center;
+}
+
+.features-header h2{
+    margin-bottom: 20px;
+}
+
+.card-img{
+    height: 90px;
+    width:90px;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.features-card{
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    max-width: 30%;
+}
+
+.features-area{
+    flex-wrap:wrap;
+    top:50px;
+    margin-top: 30px;
+}
+
+.tertiary-button{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+    width : 200px;
+    height :40px;
+    text-align: center;
+    padding-top: 5.5px;
+    color:black;
+
+}
+
+.tertiary-button:hover{
+    border-color: var(--accent-color);
+    color:var(--accent-color);
+}
+
+
+.card-1{
+    
+    top:143.3%;
+    height:300px;
+    left:13%;
+}
+.card-2{
+    
+    position: absolute;
+    left: 45%;
+    top:143.3%;
+    height:300px;
+}
+
+.card-3{
+    
+    position: absolute;
+    left: 80%;
+    top:143.3%;
+    height:300px;
+}
+
+.card-4{
+    
+    position: absolute;
+    left:13%;
+    top:190.3%;
+    height:300px;
+
+}
+
+.card-5{
+    
+    position: absolute;
+    left:45%;
+    top:190.3%;
+    height:300px;
+}
+
+.card-6{
+    
+    position: absolute;
+    left:80%;
+    top:190.3%;
+    height:300px;
+}

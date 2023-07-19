@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>
+position properties
+</title> 
+
+<style>
+
+body{
+background-image:url("https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074131_1280.jpg");
+background-repeat:no-repeat;
+background-size:cover;}
+
+div{
+   height:100px;
+   width:100px;
+   background-color: #7B52AB;
+   border:2px solid black;
+   display:inline-block;
+   }
+  
+#Box1{
+Position: static ; <! there is no change on the page because by default the position of elements are static >
+background-color:#25064C;
+}  
+
+#Box2{
+Position :relative;
+top:20px;
+background-color:#628532;
+}
+
+#Box3{
+Position: absolute ; <! in this the position of box 4 will change because it is removed from the document flow, now its position changed according to body tag >
+margin-top:15px;
+background-color:#553285;
+right:20px;
+}
+
+#Box4{
+background-color:#7b7782;
+position:fixed;
+right:40px;
+top:0px;
+}
+
+hr{
+broder: 10px solid black;
+}
+
+#Box-A{
+background-color:#B31B73 ;
+z-index:-2;
+
+}
+
+#Box-B{
+background-color:#1bb35b;
+z-index:-3;
+Position:relative;
+top:15px;
+right:15px;
+height:200px;
+}
+
+#Box-C{
+background-color:#935e7d;
+z-index:-2;
+position :absolute;
+bottom:10px;
+height:190px;
+left:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+<h1> Position playground </h1>
+
+<p>
+<ul>
+<li>static - default position (The top, right, bottom, left, and z-index properties have no effect)</li>
+ 
+ <li>relative - element is relative to itself. (The top, right, bottom, left, and z-index will work)</li>
+<li> absolute - positioned relative to its closest positioned ancestor. (removed from the flow) </li>
+<li>fixed - positioned relative to browser. (removed from flow)</li>
+ <li> sticky - positioned based on user's scroll position</li>
+</ul>
+
+     <div id = "Box1"> Box 1</div> 
+	 <div id = "Box2"> Box 2</div> 
+	 <div id = "Box3"> Box 3</div> 
+	 <div id = "Box4">  Box 4</div>
+	 
+	 <hr>
+	 
+	 <h2> z-index</h2>
+	 <div id= "Box-A"> Box-A </div>
+	 <div id= "Box-B"> Box-B </div>
+	 <div id= "Box-C"> Box-C </div>
+	 
+</body>
+	 </html>
+	 

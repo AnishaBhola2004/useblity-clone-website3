@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> functions in js</title>
+        
+    <style>
+        body{
+            background-color: #DE264C;
+        }
+    </style>
+    
+    </head>
+    <body>
+        <h1> functions in js</h1>
+
+        <script>
+
+        function Avg( a , b){
+            return ( a + b) / 3      
+          }
+
+            let a = 4;
+            let b = 5;
+            let c = 6;
+            console.log(" average of a and b is ", Avg(a,b))
+            console.log(" average of c and b is ", Avg(b,c))
+            console.log(" average of a and c is ", Avg(c,a))
+
+            // js function toreverse a number 
+            function reverse_a_number(n)
+            {
+                n = n + " "; // convert the number into string
+                return n.split (" "). // use split method to split the string into array
+                reverse(). // use reverse method to reverse an array into places 
+                join (" "); // use join method to join all the elements of array into string
+            }
+            console.log( (reverse_a_number(32243)));
+
+        </script>
+    </body>
+    </html>
+    

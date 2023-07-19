@@ -1,0 +1,85 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <title>
+            variable in javascript
+        </title>
+        <script>
+              /*const str1 = 5;
+              const str2 = 10;
+              const str3 = 15;
+              const result = Number(str1)+Number(str2)+Number(str3);
+              console.log(result);
+              
+              console.log(typeof result)
+/* creating a dictionary */
+              const dict = {
+                fioritura:"he ornamentation of a melody, often extemporized by the performer, as in Italian opera during the 18th century.",
+                mauka: "toward the mountains",
+                pervicacious:"extremely willful; obstinate; stubborn.",
+                orrery:"any of certain similar machines, as a planetarium"
+            }
+            console.log(dict.pervicacious)
+
+            if (age>0){
+                console.log("a valid age");
+            }
+
+            else if(age>10 && age <18){
+                console.log("but you are a kid");
+            }
+            else if(age>18){
+                console.log("not a kid anymore");
+            }
+
+            else {
+                console.log("invalid Age")
+            }
+
+            /*alert box */
+            function myFunction(){
+                alert ("i am alert box!");
+            }
+
+            /*confirm box */
+            function MyFunction(){
+                var text;
+                if(confirm("press a button!")){
+                    text ="you press ok !";
+                }else {
+                    text="you press cancel !";
+                }
+                document.getElementById("demo").innerHTML = text;
+            }
+
+            /*prompt box */
+            function MyFunction1(){
+                let text;
+                let person = prompt("Please enter your name : " , "Harry potter");
+                if(person == null || person == ""){
+                    text = "user cancelthe prompt ";
+                }else {
+                    text ="hello "+ person + "How are you !..";
+                }
+                document.getElementById("demo1").innerHTML = text;
+            }
+        </script>
+    </head>
+    <body>
+<h2> js alert</h2>
+<button onclick="myFunction()"> 
+    Try it 
+</button>
+
+<h2> JS confirm</h2>
+<button onclick = "MyFunction()">
+ try me 
+</button> 
+<p id="demo"></p>
+
+<h2> prompt box </h2>
+<button onclick = "MyFunction1()"> try it </button>
+<p id="demo1"></p>
+    </body>
+
+</html>

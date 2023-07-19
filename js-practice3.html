@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            javascript practice
+        </title>
+        <style>
+            body{
+                background-color: #fafa6e;
+            }
+            h1{
+                color:#2a4858;
+                text-align: center;
+            }
+        </style>
+        <script>
+            /* for loop */
+            for(let i = 0; i < 34; i++){
+                console.log(i)
+            }
+
+            /*save object in another variable */
+            let obj ={
+                harry: 82,
+                rohit:75,
+                ridhi: 49,
+                tanu : 75,
+                nishu : 89,
+                simran :86,
+            }
+            for(let a in obj){
+                console.log("marks of " + a + " are  " + obj[a])
+            }
+
+            /* while loop */
+            let n = prompt ("enter the value of n")
+            /* convert the number into int */
+            n = Number.parseInt(n)
+            let i = 0;
+            while (i<n){
+                console.log(i)
+                i++;
+            }
+
+            /* do- while loop*/
+            do {
+                console.log(i)
+                i++;
+            }while (i < n) // block runs then condition checks
+            </script>
+    </head>
+    <body>
+        <h1> For loop in javascript </h1>
+    </body>
+    </html>
